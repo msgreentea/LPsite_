@@ -1,0 +1,371 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  font-size: 100%;
+  max-width: 1500px;
+  width: 100vw;
+  color: #707070;
+}
+a, li {
+  text-decoration: none;
+  color: #707070;
+}
+p {
+  line-height: 25px;
+}
+.wrapper {
+  padding: 50px 100px;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px;
+}
+.content-title-en {
+  font-family: 'Indie Flower', cursive;
+  color: #B31667;
+  font-size: 14px;
+}
+.content-title {
+  font-size: 18px;
+  padding: 10px 0 20px 0;
+}
+.btn {
+  text-align: center;
+  border-radius: 30px;
+  padding: 20px;
+
+}
+
+
+/* ヘッダー */
+.header {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  justify-content: space-between;
+  margin: 0 30px;
+}
+.header .logo {
+  width: 100px;
+}
+ul {
+  display: flex;
+}
+nav li{
+  padding-left: 20px;
+}
+.hamburger {
+  display: none;
+}
+
+
+/* メインビジュアル */
+.pic-mainvisual {
+  width: 60%;
+  display: block;
+  margin: 0 0 0 auto;
+  position: relative;
+}
+.mainvisual .text {
+  position: absolute;
+  top: 20%;
+  left: 23%;
+}
+.mainvisual .text h3 {
+  font-family: 'Indie Flower', cursive;
+  color: #B31667;
+  font-size: 55px;
+  padding-bottom: 50px;
+}
+.mainvisual .text span {
+  color: #06A1B3;
+}
+.mainvisual .text h4 {
+  color: #B31667;
+  font-size: 1.15rem;
+  padding-bottom: 10px;
+}
+.mainvisual .text p {
+  font-size: 13px;
+}
+
+
+/* News（テーブル） */
+table {
+  border-collapse: collapse;
+}
+.news-table tr:first-child, .news-table tr:last-child{
+  /* margin: 50px auto; */
+  margin: 10px 0;
+  border-top: solid 2px #CFCFCF;
+  border-bottom: solid 2px #CFCFCF;
+}
+.news-table th {
+  padding: 20px 0;
+  font-weight: normal;
+}
+.news-table tr:not(:first-child) {
+  border-top: solid 1px #CFCFCF;
+}
+.news-table tr:last-child {
+  border-bottom: solid 1px #CFCFCF;
+}
+.news-table .td-left {
+  background-color: #B31667;
+  color: white;
+  padding: 5px 10px;
+  width: 100px;
+  text-align: center;
+  display: block;
+  border-radius: 30px;
+  margin: 0 30px;
+}
+.news-table .td-right {
+  padding-right: 200px;
+}
+
+
+/* About */
+.about {
+  background-color: #F5F5F5;
+}
+.about .content-title, #about .content-title-en {
+  text-align: center;
+}
+.about-title {
+  text-align: center;
+}
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.about .about-flex .text {
+  width: 45%;
+}
+.about .about-flex .text p {
+  padding-top: 10px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.about img {
+  width: 40%;
+}
+
+
+/* service */
+.service .box {
+  display: grid;
+  grid-template:
+  "box1 box2" 150px
+  "box1 box3" 150px
+  /400px 400px;
+}
+.box1 {
+  grid-area: box1;
+  background-color: #B31667;
+  padding: 40px 0;
+  text-align: center;
+}
+.box2 {
+  grid-area: box2;
+  background-color: #B35B8B;
+  display: flex;
+  padding: 20px;
+}
+.box3 {
+  grid-area: box3;
+  background-color: #B2889E;
+  display: flex;
+  padding: 20px;
+}
+.service .box img {
+  width: 100px;
+}
+.service .box .text {
+  color: white;
+  font-size: 12px;
+  width: 80%;
+  margin: 0 auto;
+}
+.service .box .text .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+/* #service .box .text p {
+  text-align: start;
+} */
+
+
+/* Blog */
+.blog {
+  background-color: #F5F5F5;
+  padding: 50px 0;
+}
+.blog-content-title {
+  padding:0 160px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.cards {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.card {
+  width: 30%;
+  background-color: white;
+  border-radius: 20px;
+}
+.card  img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.blog-title {
+  position: absolute;
+  top: 0%;
+  background-color: #B31667;
+  color: white;
+  font-weight: normal;
+  border-radius: 20px 0 0 0;
+  padding: 10px 20px;
+}
+.blog-content {
+  padding: 20px;
+  font-weight: bold;
+}
+.hashtags {
+  font-weight: normal;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-btn {
+  display: block;
+  background-color: white;
+  border: 2px solid #B31667;
+  color: #B31667;
+  width: 250px;
+  margin: 50px auto 0;
+}
+
+
+/* company */
+.company-table {
+  table-layout: auto;
+  max-width: 1000px;
+  width: 100%;
+}
+.company-table th, .company-table td {
+  border: solid 1px #CFCFCF;
+  width: 100%;
+  padding: 20px;
+}
+.company table th {
+  width: 20%;
+  font-weight: bold;
+  background-color: #F5F5F5;
+}
+.company table td {
+  width: 80%;
+}
+
+
+/* info */
+.info {
+  display: flex;
+}
+.left, .right{
+  position: relative;
+}
+.left p, .right p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/* contact */
+.contact {
+  text-align: center;
+}
+.contact-text {
+  font-weight: bold;
+}
+.pinkline {
+  color: #B31667;
+  font-size: 28px;
+  font-weight: thin;
+  padding: 20px 0;
+}
+.contact-btn {
+  background: linear-gradient(90deg, #f85fae, #c40568);
+  width: 250px;
+  display: block;
+  color: white;
+  margin: 0 auto;
+  font-size: 14px;
+  box-shadow: 0 7px #860448;
+  position: relative;
+}
+.contact-btn::before {
+  background: url(../img/mail-icon.png) no-repeat;
+  font-size: 5px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 5px;
+}
+
+.footer {
+  background-color: #F5F5F5;
+  padding: 20px;
+  text-align: center;
+}
+.footer small {
+  font-size: 12px;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width:768px) {
+  .menu__line--top,
+  .menu__line--middle,
+  .menu__line--bottom {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    transition: 0.5s;
+  }
+  .menu_line-top {
+  top: 0;
+  }
+  .menu_line-middle {
+    top: 14px;
+  }
+  .menu_line-bottom {
+    bottom: 0;
+  }
+  .menu.open span:nth-of-type(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  .menu.open span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .menu.open span:nth-of-type(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+  }
+}
